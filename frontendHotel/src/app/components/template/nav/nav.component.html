@@ -7,13 +7,13 @@
     fixedTopGap="64"
   >
     <mat-nav-list class="nav-list">
-      <mat-list-item>
+      <mat-list-item routerLink="/">
         <a>
           <i class="material-icons"> pets </i>
           Início
         </a>
       </mat-list-item>
-      <mat-list-item>
+      <mat-list-item routerLink="/camera">
         <a>
           <i class="material-icons"> videocam </i>
           Câmera
@@ -22,6 +22,6 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="content">
-    <app-home></app-home>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
