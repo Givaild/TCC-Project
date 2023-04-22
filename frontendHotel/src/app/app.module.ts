@@ -14,10 +14,11 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
-import { CameraCrudComponent } from './views/camera-crud/camera-crud.component'
+import { CameraCrudComponent } from './views/camera-crud/camera-crud.component';
+import { CameraCreateComponent } from './components/camera/camera-create/camera-create.component'
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CameraCrudComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CameraCrudComponent, CameraCreateComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
