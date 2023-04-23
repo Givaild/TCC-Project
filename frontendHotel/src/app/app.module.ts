@@ -16,6 +16,7 @@ import {MatListModule} from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import { CameraCrudComponent } from './views/camera-crud/camera-crud.component';
 import { CameraCreateComponent } from './components/camera/camera-create/camera-create.component'
+import {MatButtonModule} from "@angular/material/button"
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CameraCrudComponent, CameraCreateComponent],
@@ -26,7 +27,8 @@ import { CameraCreateComponent } from './components/camera/camera-create/camera-
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],
