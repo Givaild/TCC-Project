@@ -22,8 +22,13 @@ import { HttpClientModule} from '@angular/common/http';
 import { FormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
+import { CameraReadComponent } from './components/camera/camera-read/camera-read.component';
+import { CameraRead2Component } from './components/camera/camera-read2/camera-read2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CameraCrudComponent, CameraCreateComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CameraCrudComponent, CameraCreateComponent, CameraReadComponent, CameraRead2Component],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -37,7 +42,10 @@ import { MatInputModule } from "@angular/material/input";
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -11,6 +11,7 @@ import { Camera } from "../camera.model";
 export class CameraCreateComponent {
   cameraTest: Camera = {
     camera: "",
+    id: 0
   };
 
   constructor(private cameraService: CameraService, private router: Router) {}
