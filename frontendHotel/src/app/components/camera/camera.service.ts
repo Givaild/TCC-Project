@@ -22,4 +22,7 @@ export class CameraService {
   create(camera:Camera): Observable<Camera>{
     return this.http.post<Camera>(this.baseUrl,camera)
   }
+  read(): Observable<Camera[]>{
+    return this.http.get<Camera[]>(this.baseUrl)
+  }
 }

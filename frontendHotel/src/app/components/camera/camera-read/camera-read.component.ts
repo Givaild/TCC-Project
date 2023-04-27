@@ -1,0 +1,22 @@
+import { Camera } from "./../camera.model";
+import { CameraService } from "./../camera.service";
+import { Component, OnInit } from "@angular/core";
+
+@Component({
+  selector: "app-camera-read",
+  templateUrl: "./camera-read.component.html",
+  styleUrls: ["./camera-read.component.css"],
+})
+export class CameraReadComponent implements OnInit {
+  
+  cameras: Camera[] = [];
+  displayedColumns = ['id','cameras']
+
+  constructor(private CameraService: CameraService) {}
+
+  ngOnInit(): void {
+    this.CameraService.read().subscribe((cameras) => {
+      this.cameras = cameras;
+    });
+  }
+}

@@ -1,4 +1,4 @@
 export interface Camera {
-    id? : number
+    id : number 
     camera:string
 }
