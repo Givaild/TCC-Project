@@ -10,7 +10,7 @@ import { Component, OnInit } from "@angular/core";
 export class CameraReadComponent implements OnInit {
   
   cameras: Camera[] = [];
-  displayedColumns = ['id','cameras']
+  displayedColumns = ['id','cameras','action']
 
   constructor(private CameraService: CameraService) {}
 
