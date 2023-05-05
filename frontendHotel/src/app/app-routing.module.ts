@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
 import { CameraCrudComponent } from './views/camera-crud/camera-crud.component';
 import { CameraCreateComponent } from './components/camera/camera-create/camera-create.component';
+import { CameraUpdateComponent } from './components/camera/camera-update/camera-update.component';
 
 const routes: Routes = [{
   path: "",
@@ -16,7 +17,12 @@ const routes: Routes = [{
 {
   path:"camera/create",
   component:CameraCreateComponent
-}];
+},
+{
+  path:"camera/update/:id",
+  component:CameraUpdateComponent
+},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

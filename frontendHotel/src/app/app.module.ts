@@ -27,8 +27,9 @@ import { CameraRead2Component } from './components/camera/camera-read2/camera-re
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { CameraUpdateComponent } from './components/camera/camera-update/camera-update.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CameraCrudComponent, CameraCreateComponent, CameraReadComponent, CameraRead2Component],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CameraCrudComponent, CameraCreateComponent, CameraReadComponent, CameraRead2Component, CameraUpdateComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

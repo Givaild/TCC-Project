@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-title class="card-title">Alterar Câmera</mat-card-title>
+    <form>
+        <mat-form-field appearance="outline" class="field-camera">
+            <mat-label>Descrição da Câmera</mat-label>
+            <input matInput [(ngModel)]="cameraUpdate.camera" name="camera" placeholder="Ex: Câmera 1">
+        </mat-form-field>
+    </form>
+</mat-card>
+<button mat-raised-button (click)="updateCamera()" color="primary">
+   Salvar
+</button>
+
+<button mat-raised-button (click)="cancel()" color="second">
+    Cancelar
+ </button>

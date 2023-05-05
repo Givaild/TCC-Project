@@ -25,4 +25,12 @@ export class CameraService {
   read(): Observable<Camera[]>{
     return this.http.get<Camera[]>(this.baseUrl)
   }
+  readById(id: string): Observable<Camera> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.get<Camera>(url)
+  }
+  update(camera: Camera): Observable<Camera> {
+    const url = `${this.baseUrl}/${camera.id}`
+    return this.http.put<Camera>(url,camera)
+  }
 }
