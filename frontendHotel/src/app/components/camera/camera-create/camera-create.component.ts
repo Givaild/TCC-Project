@@ -9,7 +9,7 @@ import { Camera } from "../camera.model";
   styleUrls: ["./camera-create.component.css"],
 })
 export class CameraCreateComponent {
-  cameraTest: Camera = {
+  cameraCreate: Camera = {
     camera: "",
     id: 0
   };
@@ -17,7 +17,7 @@ export class CameraCreateComponent {
   constructor(private cameraService: CameraService, private router: Router) {}
 
   createCamera(): void {
-    this.cameraService.create(this.cameraTest).subscribe(() => {
+    this.cameraService.create(this.cameraCreate).subscribe(() => {
       this.cameraService.showMessage("Camera Cadastrada");
       this.router.navigate(['/camera']);
     });
