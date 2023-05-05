@@ -1,18 +1,18 @@
 {
-  "userHotel": [
+  "users": [
     {
-      "name": "Admin",
-      "email": "admin@test.com",
+      "id": "1",
+      "name": "Adm Silva",
+      "email": "admin_silva@pethotel.com",
       "password": "admin123",
-      "id": "1"
-    }
-  ],
-  "userCli": [
+      "role": "admin"
+    },
     {
-      "name": "test",
-      "email": "test@test.com",
-      "password": "admin123",
-      "id": "1"
+      "id": "2",
+      "name": "Cliente Fulano",
+      "email": "cliente_fulano@test.com",
+      "password": "fulano_user123",
+      "role": "client"
     }
   ],
   "cameras": [

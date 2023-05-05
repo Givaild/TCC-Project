@@ -43,3 +43,20 @@
 .form-group button:hover {
   background-color: #0056b3;
 }
+
+.main-login-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-login-container .title {
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 5px;
+}
+.main-login-container .subtitle {
+  font-size: 1.1rem;
+  padding: 10px;
+}

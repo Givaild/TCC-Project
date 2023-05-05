@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { AuthService } from "./auth.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,7 @@ import { AuthService } from "./auth.service";
 })
 
 export class LoginComponent {
-  constructor(private authService: AuthService){}
+  constructor(private authService: AuthService, private router: Router){}
   email: string = '';
   password: string = '';
 
@@ -24,7 +25,9 @@ export class LoginComponent {
             logged: true,
             user: userWithoutPassword,
           }
-          localStorage.setItem("loginInfo", JSON.stringify(loginInfo))}
+            localStorage.setItem("loginInfo", JSON.stringify(loginInfo))
+            this.router.navigate(['/home'])
+          }
         },
       })
   }
