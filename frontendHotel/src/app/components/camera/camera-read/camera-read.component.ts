@@ -9,14 +9,14 @@ import { Component, OnInit } from "@angular/core";
 })
 export class CameraReadComponent implements OnInit {
   
-  cameras: Camera[] = [];
+  camerasRead: Camera[] = [];
   displayedColumns = ['id','cameras','action']
 
   constructor(private CameraService: CameraService) {}
 
   ngOnInit(): void {
     this.CameraService.read().subscribe((cameras) => {
-      this.cameras = cameras;
+      this.camerasRead = cameras;
     });
   }
 }
