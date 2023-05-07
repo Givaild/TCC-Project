@@ -1,0 +1,14 @@
+form {
+    display: flex;    
+}
+
+button {
+    margin-right: 15px;
+    margin-top: 20px;
+}
+.card-title {
+    margin-left: 15px;
+}
+.field-camera{
+    margin: 15px;
+}
