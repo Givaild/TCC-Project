@@ -17,20 +17,20 @@
   ],
   "cameras": [
     {
-      "camera": "Camera 1",
-      "id": "1"
+      "camera": "Câmera Baia 1",
+      "id": 1
     },
     {
-      "camera": "Câmera teste",
-      "id": "oizW_cA"
+      "camera": "Câmera Baia 2",
+      "id": 2
     },
     {
-      "camera": "Câmera  3",
-      "id": "nviOtQj"
+      "camera": "Câmera Baia 3",
+      "id": 3
     },
     {
-      "camera": "Câmera 2",
-      "id": "jxBH10X"
+      "camera": "Câmera Baia 4",
+      "id": 4
     }
   ]
 }
