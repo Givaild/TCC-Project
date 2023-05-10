@@ -1,3 +1,32 @@
-<button mat-raised-button (click)="navigateToLoginCreate()" color="primary">
-    Novo usuário
-</button>
+<div id="login-form-wrap">
+  <h2>Cadastro</h2>
+  <form id="login-form">
+    <p>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email"
+        required
+      /><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Senha"
+        required
+      /><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+      <input type="submit" id="login" value="Logar" />
+    </p>
+  </form>
+  <div id="create-account-wrap">
+    <p>Não tem um cadastro? <a href="#">Clique Aqui</a></p>
+    <p></p>
+  </div>
+
+ 
+</div>
