@@ -26,10 +26,19 @@
               delete
             </i>
           </a>
+          <a class="videocam">
+            <i class="material-icons" (click)="startWebcam()">
+              videocam
+            </i>
+          </a>
         </td>
       </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
   </table>
+</div>
+<div class="webcam-frame">
+  <video #videoElement class="webcam-video"></video>
+  <button mat-raised-button class="webcam-close" (click)="stopWebcam()">X</button>
 </div>

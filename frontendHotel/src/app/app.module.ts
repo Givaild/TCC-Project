@@ -23,14 +23,16 @@ import { FormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { CameraReadComponent } from './components/camera/camera-read/camera-read.component';
-import { CameraRead2Component } from './components/camera/camera-read2/camera-read2.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { CameraUpdateComponent } from './components/camera/camera-update/camera-update.component';
 import { CameraDeleteComponent } from './components/camera/camera-delete/camera-delete.component';
+import { LoginCrudComponent } from './views/login-crud/login-crud.component';
+import { LoginReadComponent } from './components/login/login-read/login-read.component';
+import { LoginCreateComponent } from './components/login/login-create/login-create.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CameraCrudComponent, CameraCreateComponent, CameraReadComponent, CameraRead2Component, CameraUpdateComponent, CameraDeleteComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CameraCrudComponent, CameraCreateComponent, CameraReadComponent, CameraUpdateComponent, CameraDeleteComponent, LoginCrudComponent, LoginReadComponent, LoginCreateComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

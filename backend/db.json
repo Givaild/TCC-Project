@@ -1,20 +1,13 @@
 {
-  "userHotel": [
+  "users": [
     {
-      "name": "Admin",
       "email": "admin@test.com",
       "password": "admin123",
+      "isAdmin": true,
       "id": "1"
     }
   ],
-  "userCli": [
-    {
-      "name": "test",
-      "email": "test@test.com",
-      "password": "admin123",
-      "id": "1"
-    }
-  ],
+
   "cameras": [
     {
       "camera": "Câmera Baia 1",
@@ -29,7 +22,7 @@
       "id": 3
     },
     {
-      "camera": "Câmera Baia 4",
+      "camera": "Camera Teste",
       "id": 4
     }
   ]

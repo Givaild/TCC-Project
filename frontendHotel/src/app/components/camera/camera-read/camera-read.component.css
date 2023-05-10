@@ -9,5 +9,26 @@ table {
 }
 
 .delete > i {
-    color:#E35E6B
+    color:#E35E6B;
+    margin-right: 15px;
 }
+.videocam {
+    color: darkgreen;
+}
+.webcam-frame {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+.webcam-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }

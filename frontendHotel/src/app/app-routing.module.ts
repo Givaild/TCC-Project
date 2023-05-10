@@ -6,9 +6,11 @@ import { CameraCrudComponent } from './views/camera-crud/camera-crud.component';
 import { CameraCreateComponent } from './components/camera/camera-create/camera-create.component';
 import { CameraUpdateComponent } from './components/camera/camera-update/camera-update.component';
 import { CameraDeleteComponent } from './components/camera/camera-delete/camera-delete.component';
+import { LoginCrudComponent } from './views/login-crud/login-crud.component';
+import { LoginCreateComponent } from './components/login/login-create/login-create.component';
 
 const routes: Routes = [{
-  path: "",
+  path: "home",
   component: HomeComponent
 },
 {
@@ -26,6 +28,14 @@ const routes: Routes = [{
 {
   path:"camera/delete/:id",
   component:CameraDeleteComponent
+},
+{
+  path:"login",
+  component:LoginCrudComponent
+},
+{
+  path:"login/create",
+  component:LoginCreateComponent
 }
 ];
 
