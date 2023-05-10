@@ -1,0 +1,39 @@
+<!-- <mat-card>
+    <mat-card-title class="card-title">Cadastro Usúarios</mat-card-title>
+    <form>
+        <mat-form-field appearance="outline" class="field-camera">
+            <mat-label>Descrição da Câmera</mat-label>
+            <input matInput name="camera">
+        </mat-form-field>
+    </form>
+</mat-card>
+<button mat-raised-button color="primary">
+   Salvar
+</button>
+
+<button mat-raised-button color="second">
+    Cancelar
+ </button> -->
+
+ <div class="main-login-container">
+    <mat-card-title class="title"> 
+      Bem Vindo! 
+    </mat-card-title>
+  
+    <mat-card-subtitle class="subtitle">
+      Sistema para exemplificar o monitoramento Real-time de Pets em Clínicas
+      Veterinárias. TCC Univesp
+    </mat-card-subtitle>
+  </div>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form  #loginForm="ngForm">
+      <div class="form-group">
+        <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        <label for="password">Senha</label>
+          <input type="password" id="password" name="password" required>
+        <button type="submit" [disabled]="!loginForm.form.valid">Entrar</button>
+      </div>
+    </form>
+  </div>
