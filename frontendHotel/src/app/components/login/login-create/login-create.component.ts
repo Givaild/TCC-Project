@@ -24,24 +24,8 @@ export class LoginCreateComponent {
   
   createUser(): void{
     this.userCreate.isAdmin = this.userCreate.isAdmin ? false : true;
-    this.loginService.create(this.userCreate).subscribe(() => this.router.navigate(['/home']))
+    this.loginService.create(this.userCreate).subscribe(() => this.router.navigate(['/login']))
+    this.loginService.showMessage("Usuário Cadastrado")
   }
   
 }
-
-
-
-// export class CameraCreateComponent {
-//   cameraCreate: Camera = {
-//     camera: "",
-//     id: 0
-//   };
-
-//   constructor(private cameraService: CameraService, private router: Router) {}
-
-//   createCamera(): void {
-//     this.cameraService.create(this.cameraCreate).subscribe(() => {
-//       this.cameraService.showMessage("Camera Cadastrada");
-//       this.router.navigate(['/camera']);
-//     });
-//   }

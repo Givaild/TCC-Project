@@ -1,8 +1,8 @@
 <app-header></app-header>
-<button class="navCameraCreate" mat-raised-button color="primary">
-    Nova Usuário
+<button (click)="navigateToLoginCreate()" class="navCameraCreate" mat-raised-button color="primary">
+    Novo Usuário
 </button>
-<button class="turnBack" mat-raised-button  color="primary">
+<button class="turnBack" (click)="navigateToHome()" mat-raised-button  color="primary">
     Voltar
 </button>
 <app-login-read></app-login-read>

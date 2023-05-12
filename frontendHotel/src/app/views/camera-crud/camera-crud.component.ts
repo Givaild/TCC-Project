@@ -13,7 +13,7 @@ export class CameraCrudComponent {
     headerService.headerData = {
       title: "Lista de  câmeras",
       icon: "videocam",
-      routeUrl: "",
+      routeUrl: "/home",
     };
   } 
 

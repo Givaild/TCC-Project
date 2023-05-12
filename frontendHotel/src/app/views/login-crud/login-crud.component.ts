@@ -9,7 +9,10 @@ import { Router } from "@angular/router";
 export class LoginCrudComponent {
   constructor(private router: Router) {}
 
-  navigateToLoginCreate(): void {
-    this.router.navigate(["login/create"]);
+  navigateToHome(): void {
+    this.router.navigate(["/home"]);
+  }
+  navigateToLoginCreate(){
+    this.router.navigate(["/login/create"])
   }
 }

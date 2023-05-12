@@ -12,7 +12,7 @@ export class HomeComponent {
     headerService.headerData = {
       title: 'Início',
       icon: 'pets',
-      routeUrl: ''
+      routeUrl: '/home'
     }
   }
 }
