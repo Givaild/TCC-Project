@@ -1,29 +1,20 @@
-<div id="login-form-wrap">
-  <h2>Cadastro de Usuários</h2>
-  <form id="login-form">
-    <p>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Email"
-        required
-      /><i class="validation"><span></span><span></span></i>
-    </p>
-    <p>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="Senha"
-        required
-      /><i class="validation"><span></span><span></span></i>
-    </p>
-    <p>
-      <input type="submit" id="login" value="Login" />
-    </p>
+<div class="create-container">
+  <h2>Cadastro</h2>
+  <form #loginForm="ngForm">
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input matInput  [(ngModel)]="userCreate.email" type="email" id="email" name="email" required />
+      <label for="password">Senha</label>
+      <input matInput [(ngModel)]="userCreate.password" type="password" id="password" name="password" required />
+      <div class="checkbox-group">
+        <label for="client">
+          <input type="checkbox" id="client" name="client" />
+          Marque se for cliente
+        </label>
+      </div>
+      <button  (click)="createUser()" type="button" [disabled]="!loginForm.form.valid">
+        Cadastrar
+      </button>
+    </div>
   </form>
-  <div id="create-account-wrap">
-    <p></p>
-  </div>
 </div>

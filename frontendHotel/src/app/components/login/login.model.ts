@@ -1,6 +1,6 @@
-export interface UserModel {
-    id: number
+export interface LoginModel {
     email: string
     password: string
     isAdmin: boolean
+    id: number
 }

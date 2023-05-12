@@ -14,6 +14,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: #FFF;
 }
 .msg-error {
-    background-color:rgb(227,97,107); ;
-    color: #FFF;
-}
+    background-color: rgb(227,97,107) !important;
+    color: #FFF !important;
+  }

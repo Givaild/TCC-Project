@@ -8,6 +8,7 @@ import { CameraUpdateComponent } from './components/camera/camera-update/camera-
 import { CameraDeleteComponent } from './components/camera/camera-delete/camera-delete.component';
 import { LoginCrudComponent } from './views/login-crud/login-crud.component';
 import { LoginCreateComponent } from './components/login/login-create/login-create.component';
+import { LoginHomeComponent } from './components/login/login-home/login-home.component';
 
 const routes: Routes = [{
   path: "home",
@@ -36,7 +37,12 @@ const routes: Routes = [{
 {
   path:"login/create",
   component:LoginCreateComponent
+},
+{
+  path:"",
+  component:LoginHomeComponent
 }
+
 ];
 
 @NgModule({

@@ -31,8 +31,9 @@ import { CameraDeleteComponent } from './components/camera/camera-delete/camera-
 import { LoginCrudComponent } from './views/login-crud/login-crud.component';
 import { LoginReadComponent } from './components/login/login-read/login-read.component';
 import { LoginCreateComponent } from './components/login/login-create/login-create.component';
+import { LoginHomeComponent } from './components/login/login-home/login-home.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CameraCrudComponent, CameraCreateComponent, CameraReadComponent, CameraUpdateComponent, CameraDeleteComponent, LoginCrudComponent, LoginReadComponent, LoginCreateComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CameraCrudComponent, CameraCreateComponent, CameraReadComponent, CameraUpdateComponent, CameraDeleteComponent, LoginCrudComponent, LoginReadComponent, LoginCreateComponent, LoginHomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -49,7 +50,7 @@ import { LoginCreateComponent } from './components/login/login-create/login-crea
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

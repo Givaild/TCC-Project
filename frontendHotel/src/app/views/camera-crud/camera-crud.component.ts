@@ -20,4 +20,7 @@ export class CameraCrudComponent {
   navigateToCameraCreate(): void {
     this.router.navigate(["camera/create"]);
   }
+  navigateToHome(): void {
+    this.router.navigate(["home"]);
+  }
 }

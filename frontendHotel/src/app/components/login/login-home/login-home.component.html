@@ -1,0 +1,21 @@
+<div class="create-container">
+  <h2>Entre</h2>
+  <form #loginForm="ngForm">
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input
+        matInput
+        [(ngModel)]="userHome.email"
+        type="email"
+        id="email"
+        name="email"
+        required
+      />
+      <label for="password">Senha</label>
+      <input matInput type="password" id="password" name="password" required />
+      <div class="checkbox-group"></div>
+      <button (click)="validateUser()" type="button">Entrar</button>
+      <p>Não possui cadastro? <br />Entre em contato com Pet Hotel</p>
+    </div>
+  </form>
+</div>
