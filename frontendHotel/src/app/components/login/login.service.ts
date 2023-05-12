@@ -32,4 +32,7 @@ export class LoginService {
       );
   }
   
+  read(): Observable<LoginModel[]> {
+    return this.http.get<LoginModel[]>(this.baseUrl)
+  }
 }
