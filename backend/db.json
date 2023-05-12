@@ -5,9 +5,20 @@
       "password": "admin123",
       "isAdmin": true,
       "id": "1"
+    },
+    {
+      "id": "7BePe0W",
+      "email": "adm@adm.com",
+      "password": "123456",
+      "isAdmin": false
+    },
+    {
+      "id": "0VNwMru",
+      "email": "admin@test.com",
+      "password": "123456",
+      "isAdmin": true
     }
   ],
-
   "cameras": [
     {
       "camera": "Câmera Baia 1",
