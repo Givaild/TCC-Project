@@ -1,7 +1,6 @@
 import { Component,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginService } from '../login.service';
-import { UserModel } from '../login-read/login.model';
 import { LoginModel } from '../login.model';
 
 
