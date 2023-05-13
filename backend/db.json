@@ -1,20 +1,14 @@
 {
   "users": [
     {
-      "email": "admin@test.com",
-      "password": "admin123",
-      "isAdmin": true,
+      "email": "cliente@teste.com",
+      "password": "123",
+      "isAdmin": false,
       "id": "1"
     },
     {
       "id": "7BePe0W",
       "email": "adm@adm.com",
-      "password": "123456",
-      "isAdmin": false
-    },
-    {
-      "id": "0VNwMru",
-      "email": "admin@test.com",
       "password": "123456",
       "isAdmin": true
     }
@@ -35,6 +29,10 @@
     {
       "camera": "Camera Teste",
       "id": 4
+    },
+    {
+      "camera": "Câmera 5",
+      "id": 5
     }
   ]
 }
