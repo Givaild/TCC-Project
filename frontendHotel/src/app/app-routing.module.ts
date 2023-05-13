@@ -9,6 +9,7 @@ import { CameraDeleteComponent } from './components/camera/camera-delete/camera-
 import { LoginCrudComponent } from './views/login-crud/login-crud.component';
 import { LoginCreateComponent } from './components/login/login-create/login-create.component';
 import { LoginHomeComponent } from './components/login/login-home/login-home.component';
+import { LoginUpdateComponent } from './components/login/login-update/login-update.component';
 
 const routes: Routes = [{
   path: "home",
@@ -41,6 +42,10 @@ const routes: Routes = [{
 {
   path:"",
   component:LoginHomeComponent
+},
+{
+path:"login/update/:id",
+component:LoginUpdateComponent
 }
 
 ];

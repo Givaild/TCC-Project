@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-title class="card-title">Editar Usuário</mat-card-title>
+    <form>
+        <mat-form-field appearance="outline" class="field-user">
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)]="loginUpdate.email" name="user" >
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="field-user">
+            <mat-label>Senha</mat-label>
+            <input matInput [(ngModel)]="loginUpdate.password" name="password" >
+        </mat-form-field>
+        <div class="checkbox-group">
+            <label for="client">
+              <input [(ngModel)]="loginUpdate.isAdmin" type="checkbox" id="client" name="client" />
+              Marque se for Administrador
+            </label>
+          </div>
+    </form>
+</mat-card>
+<button mat-raised-button (click)="updateUser()" color="primary">
+   Atualizar
+</button>
+
+<button mat-raised-button (click)="cancel()" color="second">
+    Cancelar
+ </button>

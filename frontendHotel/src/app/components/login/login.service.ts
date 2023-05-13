@@ -35,4 +35,19 @@ export class LoginService {
   read(): Observable<LoginModel[]> {
     return this.http.get<LoginModel[]>(this.baseUrl)
   }
+
+  readById(id: string):Observable<LoginModel> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<LoginModel>(url)
+  }
+
+  update(user: LoginModel):Observable<LoginModel> {
+    const url = `${this.baseUrl}/${user.id}`;
+    return this.http.put<LoginModel>(url, user)
+  }
+
+  delete(id:string): Observable<LoginModel>{
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<LoginModel>(url)
+  }
 }

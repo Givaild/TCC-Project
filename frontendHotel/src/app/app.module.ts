@@ -32,8 +32,9 @@ import { LoginCrudComponent } from './views/login-crud/login-crud.component';
 import { LoginReadComponent } from './components/login/login-read/login-read.component';
 import { LoginCreateComponent } from './components/login/login-create/login-create.component';
 import { LoginHomeComponent } from './components/login/login-home/login-home.component';
+import { LoginUpdateComponent } from './components/login/login-update/login-update.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CameraCrudComponent, CameraCreateComponent, CameraReadComponent, CameraUpdateComponent, CameraDeleteComponent, LoginCrudComponent, LoginReadComponent, LoginCreateComponent, LoginHomeComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CameraCrudComponent, CameraCreateComponent, CameraReadComponent, CameraUpdateComponent, CameraDeleteComponent, LoginCrudComponent, LoginReadComponent, LoginCreateComponent, LoginHomeComponent, LoginUpdateComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

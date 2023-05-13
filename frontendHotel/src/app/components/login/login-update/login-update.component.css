@@ -1,0 +1,17 @@
+form {
+    display: flex;    
+}
+
+button {
+    margin: 20px;
+}
+.card-title {
+    margin-left: 15px;
+}
+.field-user{
+    margin: 15px;
+}
+
+.checkbox-group{
+    margin: 30px
+}
