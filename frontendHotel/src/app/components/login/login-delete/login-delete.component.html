@@ -1,0 +1,18 @@
+<app-header></app-header>
+<mat-card>
+    <mat-card-title class="card-title">Excluir Usuário</mat-card-title>
+    <form>
+        <mat-form-field appearance="outline" class="field-user">
+            <mat-label>Email</mat-label>
+            <input matInput [value]="userDelete.email" name="user" disabled>
+        </mat-form-field>
+    </form>
+</mat-card>
+<button mat-raised-button (click)="deleteUser()" color="warn">
+   Excluir
+</button>
+
+<button mat-raised-button (click)="cancel()" color="second">
+    Cancelar
+ </button>
+ <app-footer></app-footer>

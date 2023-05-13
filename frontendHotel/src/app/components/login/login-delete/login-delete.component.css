@@ -3,7 +3,7 @@ form {
 }
 
 button {
-    margin: 20px;
+   margin: 15px;
 }
 .card-title {
     margin-left: 15px;
@@ -11,8 +11,4 @@ button {
 }
 .field-user{
     margin: 15px;
-}
-
-.checkbox-group{
-    margin: 30px
 }

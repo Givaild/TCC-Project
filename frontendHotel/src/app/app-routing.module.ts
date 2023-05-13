@@ -10,6 +10,7 @@ import { LoginCrudComponent } from './views/login-crud/login-crud.component';
 import { LoginCreateComponent } from './components/login/login-create/login-create.component';
 import { LoginHomeComponent } from './components/login/login-home/login-home.component';
 import { LoginUpdateComponent } from './components/login/login-update/login-update.component';
+import { LoginDeleteComponent } from './components/login/login-delete/login-delete.component';
 
 const routes: Routes = [{
   path: "home",
@@ -46,6 +47,10 @@ const routes: Routes = [{
 {
 path:"login/update/:id",
 component:LoginUpdateComponent
+},
+{
+path:"login/delete/:id",
+component:LoginDeleteComponent
 }
 
 ];
