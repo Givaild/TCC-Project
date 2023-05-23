@@ -8,7 +8,7 @@ import { EMPTY, Observable, catchError, map } from "rxjs";
   providedIn: "root",
 })
 export class CameraService {
-  baseUrl = "http://localhost:3001/cameras";
+  baseUrl = "https://json-server-vercel-phi-five.vercel.app/cameras";
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 
@@ -17,14 +17,11 @@ export class CameraService {
       duration: 3000,
       horizontalPosition: "right",
       verticalPosition: "top",
-      panelClass: isError ? ["msg-success"] : ["msg-error"],
+      panelClass: isError ?  ["msg-error"] : ["msg-success"],
     });
   }
   create(camera: Camera): Observable<Camera> {
-    return this.http.post<Camera>(this.baseUrl, camera).pipe(
-      map((obj) => obj),
-      catchError((e) => this.errorHandler(e))
-    );
+    return this.http.post<Camera>(this.baseUrl, camera);
   }
 
   read(): Observable<Camera[]> {
