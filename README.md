@@ -9,7 +9,7 @@ Orientadora: Natália de Souza Pelinson
 
 Desenvolvimento de Aplicativo para monitoramento Real-time
 de Pets em Clínicas Veterinárias, utilizando Web-App em HTML, CSS
-e JavaScript
+e TypeScript e Framework Angular
 
 
 O objetivo principal desse projeto é desenvolver um aplicativo para monitoramento a
