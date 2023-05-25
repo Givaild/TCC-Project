@@ -8,7 +8,7 @@ import { MatSnackBar } from "@angular/material/snack-bar";
   providedIn: "root",
 })
 export class LoginService {
-  baseUrl = "https://json-server-vercel-phi-five.vercel.app/users";
+  baseUrl = "http://localhost:3001/users";
 
   constructor(private http: HttpClient, private snackBar: MatSnackBar) {}
 
